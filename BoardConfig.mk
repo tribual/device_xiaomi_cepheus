@@ -101,9 +101,6 @@ BOARD_USES_GRALLOC_ION_SYNC := true
 # Graphics
 BOARD_USES_ADRENO := true
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
