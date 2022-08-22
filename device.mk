@@ -437,7 +437,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # SystemUITests
-EXCLUDE_SYSTEMUI_TESTS := true
+# EXCLUDE_SYSTEMUI_TESTS := true
 
 # Telephony
 PRODUCT_PACKAGES += \
