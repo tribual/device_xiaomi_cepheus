@@ -21,29 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common VoidUI stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# VoidUI Feature Flags
-TARGET_INCLUDE_WIFI_EXT := true
-IS_PHONE := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_QUICK_TAP  := true
-
-# VoidUI Maintainer Flags
-VOID_MAINTAINER := G.H.O.S.T
+# Inherit some common Spark stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := false
+EXTRA_UDFPS_ANIMATIONS := true
+WITH_GAPPS := true
+SPARK_BUILD_TYPE := OFFICIAL
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := aosp_cepheus
+PRODUCT_NAME := spark_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Recovery
-TARGET_USES_AOSP_RECOVERY := true
