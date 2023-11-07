@@ -21,17 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common EvolutionX stuff.
-EVO_BUILD_TYPE := OFFICIAL
-EXTRA_UDFPS_ANIMATIONS := true
+# Inherit some common Bootleggers stuff.
+BOOTLEGGERS_BUILD_TYPE := Shishufied
+DEVICE_MAINTAINERS := tribual
+WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+BOOTLEGGERS_UDFPS_ANIMATIONS := true
+BOOTLEGGERS_DEVICE_SUPPORTS_APERTURE := false
+
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := evolution_cepheus
+PRODUCT_NAME := bootleg_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
