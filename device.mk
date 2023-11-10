@@ -269,6 +269,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.cepheus
 
+# KernelSU
+PRODUCT_PACKAGES += \
+    KSUManager
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/KSUManager/lib/libkernelsu.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libkernelsu.so \
+    $(LOCAL_PATH)/KSUManager/lib/libksud.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libksud.so
+
 # Media
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
