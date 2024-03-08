@@ -23,22 +23,23 @@ import android.media.AudioAttributes;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
-import android.widget.Switch;
+import android.widget.CompoundButton;
 
 import androidx.preference.PreferenceFragment;
 
 import com.android.settingslib.widget.MainSwitchPreference;
-import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.settings.R;
 
 import java.io.IOException;
 
 public class ClearSpeakerFragment extends PreferenceFragment implements
-        OnMainSwitchChangeListener {
+        OnCheckedChangeListener {
 
     private static final String TAG = ClearSpeakerFragment.class.getSimpleName();
 
@@ -61,7 +62,7 @@ public class ClearSpeakerFragment extends PreferenceFragment implements
     }
 
     @Override
-    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if (isChecked && startPlaying()) {
             mHandler.removeCallbacksAndMessages(null);
             mHandler.postDelayed(() -> {
