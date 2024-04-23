@@ -346,6 +346,9 @@ PRODUCT_COPY_FILES += \
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_INCLUDES_MIUI_CAMERA := true
 TARGET_USES_MIUI_CAMERA := true
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
+MALLOC_SVELTE := true
+MALLOC_SVELTE_FOR_LIBC32 := true
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Network
