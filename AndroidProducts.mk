@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_cepheus.mk
+    $(LOCAL_DIR)/lineage_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_cepheus-user \
-    evolution_cepheus-userdebug \
-    evolution_cepheus-eng
+    lineage_cepheus-user \
+    lineage_cepheus-userdebug \
+    lineage_cepheus-eng
