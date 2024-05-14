@@ -26,6 +26,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_EPPE := true
+TARGET_HAS_UDFPS := true
 
 # Device identifier
 PRODUCT_NAME := lineage_cepheus
