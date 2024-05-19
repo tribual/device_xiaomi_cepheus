@@ -389,6 +389,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     DialerConfigOverlay \
     FrameworksResCepheus \
+    LineageSDKOverlay \
     SettingsProviderOverlayCepheus \
     SettingsResCepheus \
     SimpleDeviceConfigResCepheus \
