@@ -80,7 +80,6 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswvqe.so
->>>>>>> parent of 4ccff76 ([SQUASH] cepheus: Drop Dolby support)
 
 # Audio (Configs)
 vendor/etc/audio_configs.xml
