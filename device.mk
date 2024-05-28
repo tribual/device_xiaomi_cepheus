@@ -489,6 +489,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    bootable/deprecated-ota \
     hardware/google/interfaces \
     hardware/xiaomi
 
