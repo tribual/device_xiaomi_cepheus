@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
+    libpng.vendor \
     libstdc++_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
@@ -425,7 +426,8 @@ PRODUCT_PACKAGES += \
 
 # QTI
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libsqlite.vendor 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist.xml \
@@ -476,6 +478,7 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
+    libpiex_shim \
     libwatermark_shim
 
 # Soong namespaces
