@@ -347,6 +347,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
+# MiuiCamera
+TARGET_CAMERA_PACKAGE_NAME := com.android.camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+TARGET_USES_MIUI_CAMERA := true
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
