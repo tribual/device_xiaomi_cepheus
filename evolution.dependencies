@@ -18,5 +18,11 @@
     "target_path": "prebuilts/clang/host/linux-x86/clang-r530567",
     "branch": "14.0",
     "remote": "gitlab"
+  },
+  {
+    "repository": "ItzDFPlayer/vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "branch": "leica-5.0-cepheus",
+    "remote": "gitlab"
   }
 ]
