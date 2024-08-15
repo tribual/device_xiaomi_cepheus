@@ -8,10 +8,8 @@
     "target_path": "kernel/xiaomi/cepheus"
   },
   {
-    "repository": "LineageOS/android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi",
-    "remote": "github-non-los",
-    "branch": "lineage-21"
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
   },
   {
     "repository": "crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r530567",
@@ -20,8 +18,8 @@
     "remote": "gitlab"
   },
   {
-    "repository": "ItzDFPlayer/vendor_xiaomi_miuicamera",
-    "target_path": "vendor/xiaomi/miuicamera",
+    "repository": "chematelegram/android_vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera-cepheus",
     "branch": "leica-5.0-cepheus",
     "remote": "gitlab"
   }
