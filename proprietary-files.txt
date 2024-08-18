@@ -662,7 +662,7 @@ vendor/lib64/egl/eglSubDriverAndroid.so|ac9099723b30614cf7c61c667204a392959694db
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|2fe7c58e7f040637f201cdfbfdaa8b8257daa514
 vendor/lib64/egl/libGLESv1_CM_adreno.so|b9e14710b9c2be024e1fdf77d60266423e484047
 vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|2aacde9712052563c4b998ea5ac57018db1e2220
-vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so|172810bc218ab55fe95f628ab1c0d37833eb0021
+vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|172810bc218ab55fe95f628ab1c0d37833eb0021
 vendor/lib64/egl/libq3dtools_esx.so|abe73a7c9a90ad1c80d8ad8f5c942b902623e4f0
 vendor/lib64/hw/vulkan.adreno.so|ef355a774941620917f1ba1f0b48c9193091aad4
 vendor/lib64/libC2D2.so|0b4aa67ef7e86df61a1bfd7dfd4680e0f0d7104c
