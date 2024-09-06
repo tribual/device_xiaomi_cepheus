@@ -495,6 +495,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/xiaomi
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcrypto-v34
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
