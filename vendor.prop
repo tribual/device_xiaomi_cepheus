@@ -223,8 +223,6 @@ ro.vendor.qti.va_odm.support=1
 
 #Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-debug.stagefright.ccodec=1
-debug.stagefright.omx_default_rank=0
 
 # Pre-rendering
 ro.vendor.perf.scroll_opt=true
