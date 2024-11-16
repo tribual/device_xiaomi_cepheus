@@ -56,5 +56,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 BUILD_FINGERPRINT := Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/V12.5.6.0.RFACNXM:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Qualcomm SDM855 Snapdragon 855" \
+    RisingChipset="Qualcomm Snapdragon 855" \
     RisingMaintainer="tribual 丨 家"
