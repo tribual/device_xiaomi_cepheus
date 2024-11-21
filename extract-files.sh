@@ -86,6 +86,9 @@ function blob_fixup() {
     vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefrightdolby.so)
         "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
         ;;
+    vendor/lib64/libwvhidl.so | vendor/lib64/mediadrm/libwvdrmengine.so)
+        "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+        ;;
     esac
 }
 
