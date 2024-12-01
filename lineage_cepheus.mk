@@ -34,7 +34,6 @@ TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 ifeq ($(strip $(WITH_GMS)),true)
     TARGET_DEFAULT_PIXEL_LAUNCHER := true
 endif
-RISING_MAINTAINER= tribual 丨 家
 
 PRODUCT_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_HARDWARE := true
@@ -52,8 +51,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/V12.5.6.0.RFACNXM:user/release-keys
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="cepheus-user 11 RKQ1.200826.002 V12.5.1.0.RFAMIXM release-keys" \
+    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME) \
     RisingChipset="Qualcomm Snapdragon 855" \
-    RisingMaintainer="tribual 丨 家"
+    RisingMaintainer= tribual 丨 家 \
+    BuildFingerprint="Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/V12.5.6.0.RFACNXM:user/release-keys"
