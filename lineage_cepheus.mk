@@ -39,7 +39,6 @@ RISING_MAINTAINER= tribual 丨 家
 PRODUCT_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msmnile
-TARGET_DISABLE_EPPE := true
 
 # Keys
 -include vendor/lineage-priv/keys/keys.mk
