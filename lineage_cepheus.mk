@@ -25,7 +25,6 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_EPPE := true
 TARGET_HAS_UDFPS := true
 BUILD_SEEDVAULT := true
 TARGET_USES_MINI_GAPPS := true
