@@ -64,8 +64,14 @@ function blob_fixup() {
     vendor/lib64/hw/camera.qcom.so)
             sed -i "s|libc++.so|libc29.so|g" "${2}"
         ;;
+    system_ext/lib/libwfdmmsrc_system.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+        ;;
     system_ext/lib64/libwfdnative.so)
-        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hidl.base@1.0.so" "libhidlbase.so" "${2}"
+            grep -q "libinput_shim.so" "${2}" || "${PATCHELF}" --add-needed "libinput_shim.so" "${2}"
         ;;
     vendor/bin/mi_thermald)
             sed -i 's/%d\/on/%d\/../g' "${2}"

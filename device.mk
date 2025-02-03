@@ -599,6 +599,8 @@ PRODUCT_PACKAGES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
+    libgui_shim \
+    libinput_shim \
     libnl \
     libwfdaac_vendor \
     vendor.qti.hardware.display.config-V5-ndk
