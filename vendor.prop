@@ -223,6 +223,7 @@ ro.vendor.qti.va_odm.support=1
 #Media
 debug.stagefright.c2inputsurface=-1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+vendor.media.omx=0
 
 # Pre-rendering
 ro.vendor.perf.scroll_opt=true
