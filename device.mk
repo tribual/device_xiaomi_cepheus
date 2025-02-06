@@ -613,3 +613,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RmPkgs
