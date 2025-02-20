@@ -9,27 +9,16 @@ LOCAL_OVERRIDES_PACKAGES := \
           arcore-1.42 \
           AICorePrebuilt \
           AICorePrebuilt-aicore_20240509.01_RC02 \
-          AiWallpapers \
-          CalendarGoogle \
-          CalendarGooglePrebuilt \
-          CalculatorGoogle \
-          CalculatorGooglePrebuilt \
+          Aperture \
           Drive \
-          Gmail2 \
+          Glimpse \
           Gallery2 \
-          GoogleCamera \
           Keep \
-          Photos \
           Maps \
           Music \
-          PrebuiltGmail \
           PixelWallpapers2021 \
           PixelWallpapers2020 \
           PixelLiveWallpaperPrebuilt \
-          Velvet \
-          RecorderPrebuilt \
-          Snap \
-          WallpapersBReel2020 \
           YouTube \
           YouTubeMusicPrebuilt
 
