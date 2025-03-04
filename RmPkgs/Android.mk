@@ -19,6 +19,7 @@ LOCAL_OVERRIDES_PACKAGES := \
           PixelWallpapers2021 \
           PixelWallpapers2020 \
           PixelLiveWallpaperPrebuilt \
+          Velvet \
           YouTube \
           YouTubeMusicPrebuilt
 
