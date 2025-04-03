@@ -24,17 +24,8 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 # Inherit some common RisingOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# RisingOS FLAGS
-WITH_GMS := true
-TARGET_ENABLE_BLUR := true
+# Extra FLAGS
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_HAS_UDFPS := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-ifeq ($(strip $(WITH_GMS)),true)
-    TARGET_DEFAULT_PIXEL_LAUNCHER := true
-endif
-RISING_MAINTAINER= tribual 丨 家
 PRODUCT_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msmnile
@@ -55,5 +46,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 BUILD_FINGERPRINT := Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/V12.5.6.0.RFACNXM:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Qualcomm Snapdragon 855" \
-    RisingMaintainer="tribual 丨 家"
+    DeviceProduct=cepheus
