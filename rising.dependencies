@@ -16,5 +16,11 @@
     "repository":   "hardware_xiaomi",
     "target_path":  "hardware/xiaomi",
     "revision":     "fifteen"
+  },
+  {
+    "remote":       "github",
+    "repository":   "tribual/android_build_soong",
+    "target_path":  "build/soong",
+    "revision":     "15.0"
   }
 ]
