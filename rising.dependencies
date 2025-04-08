@@ -1,19 +1,19 @@
 [
   {
-    "remote":       "devices",
-    "repository":   "vendor_xiaomi_cepheus",
+    "remote":       "github",
+    "repository":   “RisingOS-Revived-devices/vendor_xiaomi_cepheus",
     "target_path":  "vendor/xiaomi/cepheus",
     "revision":     "fifteen"
   },
   {
-    "remote":       "devices",
-    "repository":   "kernel_xiaomi_cepheus",
+    "remote":       "github",
+    "repository":   "RisingOS-Revived-devices/kernel_xiaomi_cepheus",
     "target_path":  "kernel/xiaomi/cepheus",
     "revision":     "fifteen-ci"
   },
   {
-    "remote":       "devices",
-    "repository":   "hardware_xiaomi",
+    "remote":       "github",
+    "repository":   "RisingOS-Revived-devices/hardware_xiaomi",
     "target_path":  "hardware/xiaomi",
     "revision":     "fifteen"
   },
