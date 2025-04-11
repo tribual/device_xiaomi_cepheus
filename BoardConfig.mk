@@ -96,7 +96,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/infinity/config/device_framework_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cepheus
@@ -158,7 +158,7 @@ BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE := 1610612736
 BOARD_CEPHEUS_DYNAMIC_PARTITIONS_SIZE := 5364514816 # BOARD_SUPER_PARTITION_SIZE - 4MB
 
 # Reserve space for gapps install
-ifneq ($(WITH_GMS),true)
+ifneq ($(WITH_GAPPS),true)
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 104857600
 BOARD_SYSTEM_EXTIMAGE_EXTFS_INODE_COUNT := -1

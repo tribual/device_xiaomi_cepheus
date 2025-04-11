@@ -21,21 +21,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common RisingOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# Extra FLAGS
+	# INFINITY-X FLAGS
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := tribual
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BUILD_VIMUSIC := true
+USE_MOTO_CALCULATOR := true
 TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_USES_QCOM_HARDWARE := true
-BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := msmnile
-TARGET_DISABLE_EPPE := true
 
 # Keys
--include vendor/lineage-priv/keys/keys.mk
+# -include vendor/lineage-priv/keys/keys.mk
 
 # Device identifier
-PRODUCT_NAME := lineage_cepheus
+PRODUCT_NAME := infinity_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9

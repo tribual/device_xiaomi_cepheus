@@ -1,0 +1,6 @@
+# About phone
+ro.infinity.soc=Snapdragon 855
+ro.infinity.battery=3300 mAh
+ro.infinity.display=1080 x 2340, 60 Hz
+ro.infinity.camera=48MP + 12MP + 16MP
+ro.product.marketname=Xiaomi Mi9 (cepheus)

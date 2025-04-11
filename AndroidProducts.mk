@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cepheus.mk
+    $(LOCAL_DIR)/infinity_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_cepheus-user \
-    lineage_cepheus-userdebug \
-    lineage_cepheus-eng
+    infinity_cepheus-user \
+    infinity_cepheus-userdebug \
+    infinity_cepheus-eng
