@@ -22,16 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-# PixelOS flags
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_USES_BLUR := true
+PRODUCT_USES_QCOM_HARDWARE := true
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := msmnile
+TARGET_BUILD_GAPPS := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := aosp_cepheus
+PRODUCT_NAME := yaap_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9

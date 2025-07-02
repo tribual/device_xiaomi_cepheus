@@ -66,6 +66,7 @@ TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.cep
 PRODUCT_FS_COMPRESSION := 1
 
 # Display
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
 
@@ -92,7 +93,7 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common//compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/yaap/config/device_framework_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cepheus
