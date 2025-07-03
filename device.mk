@@ -240,7 +240,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh
 
 PRODUCT_PACKAGES += \
-    init.power.rc
+    init.power.rc \
+    logcat.rc
 
 # Input
 PRODUCT_COPY_FILES += \

@@ -30,6 +30,9 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msmnile
 TARGET_BUILD_GAPPS := true
 
+# Exclude QCOM powerhal manifest
+TARGET_PROVIDES_POWERHAL := true
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
