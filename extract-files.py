@@ -15,9 +15,14 @@ from extract_utils.main import (
 
 namespace_imports = [
     "device/xiaomi/cepheus",
-    "hardware/qcom-caf/sm8150",
-    "hardware/xiaomi",
-    "vendor/qcom/opensource/display",
+	"hardware/qcom-caf/sm8150",
+	"hardware/qcom-caf/wlan",
+	"hardware/xiaomi",
+	"vendor/qcom/opensource/dataservices",
+	"vendor/qcom/opensource/commonsys-intf/display",
+	"vendor/qcom/opensource/commonsys/display",
+	"vendor/qcom/opensource/display",
+	"vendor/qcom/common/system/telephony",
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
@@ -28,21 +33,15 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/camera/components/com.qti.node.watermark.so': blob_fixup()
-        .add_needed('libpiex_shim.so'),
-    'vendor/etc/init/init.batterysecret.rc': blob_fixup()
-        .regex_replace(' +seclabel u:r:batterysecret:s0\n', ''),
+
     'vendor/lib/libaudioroute_ext.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib/hw/audio.primary.msmnile.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/hw/audio.primary.msmnile.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
-    'vendor/lib/hw/audio.primary.cepheus.so': blob_fixup()
-        .binary_regex_replace(
-            b'/vendor/lib/liba2dpoffload.so',
-            b'liba2dpoffload_cepheus.so\x00\x00\x00\x00',
-        )
+
+
 }  # fmt: skip
 
 module = ExtractUtilsModule(

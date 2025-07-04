@@ -6,10 +6,6 @@ vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libcdsp_default_listener.so
@@ -119,7 +115,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
@@ -127,8 +122,6 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
 # Bluetooth (sar)
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
@@ -423,10 +416,6 @@ system_ext/etc/permissions/dpmapi.xml|255903759a60a31c0876ec004e74554c753270fe
 system_ext/framework/com.qti.dpmframework.jar|4fc38f534c788b80b432b385e07973bdd6e8c98f
 system_ext/framework/dpmapi.jar|c379f7a671439737fbff03411f28891d0f9313c9
 system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so|f65b91508c640b432af56086fe5e8a68f563549a
-system_ext/lib/libdpmctmgr.so|45eb9049044f42ea35a30def9432a1fa4b0d4256
-system_ext/lib/libdpmfdmgr.so|1c4bf24ae4ce5ca3f60540bce09980bd4c0740a3
-system_ext/lib/libdpmframework.so|f328cd64c48024baed64d855b0d97ee2600ffea9
-system_ext/lib/libdpmtcm.so|113c2418e759069dc0b3d49c02132a09a424bfee
 system_ext/lib/vendor.qti.diaghal@1.0.so|2387aedd0e5c9d1027229dffc4692e03ecaed16f
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|3e9786c8263de4135926a91083b70a737fc1d28b
 system_ext/lib64/libdiag_system.so|f46e7b1741724d42a562106a3ae6a6492d8d52d1
@@ -469,9 +458,6 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
 # DRM - Widevine -L1 - from xiaomi.eu
-vendor/lib/libminksocket.so|72ddd72e8def974ad7a99d52b67c8b7cddfced21
-vendor/lib/liboemcrypto.so|bd6c31e31016704fdf58ce10e8787bdf0e8d6398
-vendor/lib/libtrustedapploader.so|b4197cb22bc73a7a71ecc677ac45facd1a0e77a3
 vendor/lib64/libminksocket.so|0722b9042892e83d4c615e0f70e4ad040365b170
 vendor/lib64/liboemcrypto.so|9aad24f21a73880ff304925f2859695664bd973c
 vendor/lib64/libtrustedapploader.so|83efdf29c9a85409ca973b5e0c8610a7449748d9
@@ -558,8 +544,8 @@ vendor/lib64/libqcc_file_agent.so|cd70ce305d5036a027060aa989b0dcbcfab8edb6
 vendor/lib64/libslimclient.so|a3baca4c19b096f310d4f0cba70b1d784e80ca49
 vendor/lib64/libsynergy_loc_api.so|f6a44f3e1b30341b7053d341d67b5608c81fc7dd
 vendor/lib64/libxtadapter.so|caf0ca0a97e43a20fcd584e12c280a1654fc6b00
-vendor/lib64/libxtwifi_server_protocol.so|ca42a0576b5b890338a1e04cd5d36aef6ebaee27
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so|7fdac704f7c923b09dd3b658e6699c4ef2452cb8
+vendor/lib64/libxtwifi_server_protocol.so
+vendor/lib64/libxtwifi_server_protocol_uri_v3.so|167d5447598214941db783322e762cf54ae769ed
 vendor/lib64/vendor.qti.gnss@1.0.so|9cb7921c8310d1bca9385c997965abf64e8937df
 vendor/lib64/vendor.qti.gnss@1.1.so|62d38c1b5e02205f64ca98cce2f8309054fd6d70
 vendor/lib64/vendor.qti.gnss@1.2.so|1ea87dffaebb7071fa4098efe239a0da583841ff
@@ -589,7 +575,6 @@ vendor/lib/libgpudataproducer.so|2f3348614ea21ed4548154d0ab52ca2256d28e80
 vendor/lib/libgsl.so|3e919532b22d1ba53a9f6141fdb3a9fbd1901f43
 vendor/lib/libllvm-glnext.so|caf1127450a30dfd034398cf142525f505071944
 vendor/lib/libllvm-qcom.so|f7ee34774bbdb3e01a5ecaf9e98ac8f924b710f9
-vendor/lib/libpvr.so|a1f1896b9f50223a9285d3496b8f9bcfa98d004d
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|066dc49939ceec71978268737f3a32c8f2aeddf2
 vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|e349a692959c6715da4b35e84c82c0eee4b01e00
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|0edfcd0c063a82a4ab29542243a0f842632f31ee
@@ -681,10 +666,6 @@ vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vppservice.rc
 vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib/libqcodec2.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphcp.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
@@ -735,8 +716,6 @@ vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
-vendor/lib/libminkdescriptor.so
-vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
 vendor/lib/libqmi.so
@@ -1027,7 +1006,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # WLAN
 -vendor/app/IWlanService/IWlanService.apk
-vendor/bin/cnss-daemon
 vendor/lib/libqsap_sdk.so
 vendor/lib64/libqsap_sdk.so
 
@@ -1048,3 +1026,7 @@ vendor/firmware/ipa_uc.mdt
 
 # Xiaomi MAC
 vendor/bin/nv_mac
+
+vendor/lib64/libasn1cper.so
+vendor/lib64/libasn1crt.so
+vendor/lib64/libasn1crtx.so

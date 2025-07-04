@@ -428,7 +428,6 @@ PRODUCT_PACKAGES += \
     libjsoncpp.vendor \
     libril \
     librilutils \
-    librmnetctl \
     libxml2
 
 PRODUCT_PACKAGES += \
