@@ -40,7 +40,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/hw/audio.primary.msmnile.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
-
+    'vendor/lib64/libwvhidl.so': blob_fixup()
+        .replace_needed('libcrypto.so', 'libcrypto-v34.so')
+        .add_needed('libcrypto_shim.so'),
+    'vendor/lib64/mediadrm/libwvdrmengine.so': blob_fixup()
+        .add_needed('libcrypto_shim.so'),
 
 }  # fmt: skip
 
