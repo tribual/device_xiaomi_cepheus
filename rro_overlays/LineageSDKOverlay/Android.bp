@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "LineageSDKOverlay",
+    theme: "LineageSDKOverlay",
+    product_specific: true,
+}
