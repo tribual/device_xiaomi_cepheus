@@ -36,6 +36,10 @@ type vendor_sysfs_hbm, sysfs_type, fs_type;
 # IR
 type ir_spi_device, dev_type, file_type;
 
+# Pixel Powerstats
+type sysfs_power_stats, sysfs_type, fs_type;
+type sysfs_power_stats_ignore, sysfs_type, fs_type;
+
 # Thermal
 type thermal_data_file, file_type, data_file_type;
 
